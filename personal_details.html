@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal details</title>
+    <link rel="stylesheet" href="p_d.css">
+    <link href="central.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <img src="AURA.png" alt="AURA Background Image" id="background-img">
+    <h1 style="text-align: center;">Fill your details</h1>
+    <form class="center" action="central.html" method="get" class="application-form">
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Emergency contact</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <label for="program">Gender:</label>
+        <select id="program" name="program">
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="others">orthers</option>
+        </select>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <label for="Blood group">Bood Group:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+
+        <label for="Diabatics">Diabetics</label>
+
+        <select id="Diabatics" name="Diabatics">
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+
+        </select>
+        <label for="bp">Blood presure</label>
+        <select id="bp" name="bp">
+            <option value="yes">yes</option>
+            <option value="no">No</option>
+        </select>
+        <label for="sur">Have you udergone any major surgry</label>
+        <input type="text" id="sur" name="sur">
+        <label for="med">Do take any regular medication--Ex:Diabetic tablets</label>
+        <input type="text" id="med" name="med">
+        <label for="ins">Insurace company name</label>
+        <input type="text" id="ins" name="ins">
+        <label for="ins">Insurace Policy id</label>
+        <input type="text" id="ins" name="ins">
+
+        <input class="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>

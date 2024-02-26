@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <img src="AURA.png" alt="AURA Background Image" id="background-img">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <style>
+        fieldset {
+            width: fit-content;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 100%; */
+            background-color: rgba(0, 98, 255, 0.457);
+            border: 1px ;
+            border-radius: 10%;
+            width: 30%;
+        }
+
+        .box {
+            padding: 15%;
+        }
+        #background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4; /* Adjust the opacity as needed */
+  z-index: -1;
+}
+.username {
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    height: 20px;
+    /* height: calc(25px + 3px); 
+    width: calc(100% + 6px); 
+    margin-right: 15px;  */
+}
+
+.password {
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    height:20px;
+    /* height: calc(25px + 3px);
+    width: calc(100% + 6px); 
+    margin-left: 5px;  */
+}
+
+.btn
+{
+    background-color: rgba(33, 33, 187, 0.457);
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+    </style>
+    <div class="box">
+        <form action="personal_details.html">
+        <fieldset>
+            <legend style="font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Log In</legend>
+            <div>
+                
+                <input type="text" class="username" placeholder="username" required>
+                <i class='bx bx-user bx-tada' ></i>
+
+                <br>
+                <br>
+                <input type="password" class="password" placeholder="password" required>
+                <i class='bx bx-lock-alt bx-tada' ></i>
+
+            </div>
+            <div class="remember">
+                <label for="remember"><input type="checkbox">Remember me</label>
+
+            </div>
+            <button style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" type="submit" class="btn" >login</button>
+            <a href="#">forgot password</a>
+            <p>Don't have an account<a href="#">Register</a></p>
+        </fieldset>
+    </form>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

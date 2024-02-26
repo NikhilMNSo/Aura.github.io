@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <a href="Index page.html">
+    </a>
+    <style>
+        #background-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            /* Adjust the opacity as needed */
+            z-index: -1;
+        }
+
+
+        /* General styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #a1999948;
+            height: 50px;
+            /* Set the height of the navbar */
+            line-height: 50px;
+            /* Vertically center the content */
+        }
+
+        nav .logo-item {
+            float: left;
+            /* Align the logo to the left */
+            height: 50px;
+            /* Set the height of the logo */
+            padding-left: 70px;
+        }
+
+        nav .logo {
+            height: 100%;
+            /* Make the logo fill the height of the navbar */
+            vertical-align: middle;
+            /* Vertically center the logo */
+
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav li {
+            float: right;
+            text-align: center;
+        }
+
+        nav li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 0 16px;
+            /* Adjust horizontal padding as needed */
+            text-decoration: none;
+            height: 50px;
+            /* Set the height of the list items */
+            line-height: 50px;
+            /* Vertically center the content */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav li a:hover {
+            background-color: #4468c45d;
+            /* Change the background color when hovered */
+            transform: scale(1.05);
+            /* Increase the size by 5% when hovered */
+        }
+
+        /* Main content styles */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .box a {
+            background-color: aliceblue;
+            border: none;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            flex: 0 0 calc(50% - 20px);
+            /* Two items per row */
+            max-width: calc(50% - 20px);
+            /* Two items per row */
+            box-shadow: 0 2px 5px rgba(56, 51, 51, 0.749);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            /* Added transition for smoother effect */
+        }
+
+        .box a:hover {
+            background-color: #4468c45d;
+            /* Change the background color when hovered */
+            transform: scale(1.05);
+            /* Increase the size by 5% when hovered */
+        }
+
+        @media screen and (max-width: 768px) {
+            .box a {
+                flex: 0 0 calc(100% - 20px);
+                /* One item per row on smaller screens */
+                max-width: calc(100% - 20px);
+                /* One item per row on smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="AURA.png" alt="AURA Background Image" id="background-img">
+    <nav>
+        <ul>
+            <a href="Index page.html"><li class="logo-item"><img  class="logo" src="trace.svg" alt="Logo"></li></a>
+            <li><a href="Index page.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <a href="#" class="reports">Reports</a>
+        <a href="#" class="summary">Summary</a>
+        <a href="#" class="medicines">Medicines</a>
+        <a href="#" class="prescriptions">Prescriptions</a>
+        <a href="#" class="Insurace">Insurance</a>
+        <a href="#" class="Labs">Labs</a>
+    </div>
+</body>
+
+</html>
